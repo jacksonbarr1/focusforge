@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useAuth } from "./context/AuthProvider.jsx";
 import TitleScreen from "../components/titlescreen/TitleScreen.jsx";
+import HomeScreen from "./routes/homescreen/HomeScreen.jsx";
 
 const Router = () => {
     const { user } = useAuth();
@@ -11,7 +12,7 @@ const Router = () => {
             <Routes>
                 <Route
                     path="/"
-                    element={<TitleScreen />}
+                    element={user ? <HomeScreen/> : <TitleScreen />}
                 />
             </Routes>
         </BrowserRouter>
