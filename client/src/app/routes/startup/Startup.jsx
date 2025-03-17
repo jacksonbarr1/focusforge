@@ -7,12 +7,15 @@ import "./startup.css";
 export const StartupPage = () => {
   return (
     <StartupLayout>
+        <div>
             <Button className="bigger-button" color="primary" borderInverted>
                 Sign in
             </Button>
             <Button className="bigger-button" color="warning" borderInverted>
                 Sign up
             </Button>
+        </div>
+
     </StartupLayout>
   )
 }
