@@ -1,14 +1,12 @@
 import Router from "./router"
+import AppProvider from "./provider.jsx";
 
 function App() {
-
   return (
-      <div className="app">
-        <h1>Hello World</h1>
-        <Router>
-        </Router>
-      </div>
+    <AppProvider>
+        <Router />
+    </AppProvider>
   )
 }
 
-export default App
+export default App;
