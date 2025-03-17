@@ -1,11 +1,11 @@
 import React from 'react'
 import StartupLayout from "../../../components/startuplayout/StartupLayout.jsx"
-import './Register.css'
+import './Login.css'
 
 
 // TODO: If user is logged in, redirect to home screen
 
-const RegisterPage = () => {
+const LoginPage = () => {
     return (
         <StartupLayout>
             
@@ -13,4 +13,4 @@ const RegisterPage = () => {
     )
 }
 
-export default RegisterPage
+export default LoginPage
