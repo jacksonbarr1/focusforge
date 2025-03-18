@@ -1,3 +1,4 @@
+import React from "react";
 import TitleScreen from "../titlescreen/TitleScreen.jsx";
 import Footer from "../footer/Footer.jsx";
 import "./startuplayout.css";

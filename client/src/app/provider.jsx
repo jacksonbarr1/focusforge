@@ -1,3 +1,4 @@
+import React from "react";
 import AuthProvider from './context/AuthProvider.jsx';
 
 const AppProvider = ({ children }) => {

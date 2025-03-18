@@ -5,6 +5,7 @@ import GoogleButton from 'react-google-button'
 import StartupLayout from "../../../components/startuplayout/StartupLayout.jsx"
 import BackButton from '../../../components/backbutton/BackButton.jsx'
 import { supabase } from '../../../config/supabaseClient.js'
+import { useAuth } from "../../context/AuthProvider.jsx"
 import './login.css'
 
 
@@ -13,11 +14,16 @@ import './login.css'
 // TODO: Fix back button triggering on ENTER
 
 const LoginPage = () => {
+    const { user } = useAuth();
     const navigate = useNavigate()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState(null)
     const [loading, setLoading] = useState(false)
+
+    if (user) {
+        navigate('/')
+    }
 
     const handleLogin = async (e) => {
         e.preventDefault()

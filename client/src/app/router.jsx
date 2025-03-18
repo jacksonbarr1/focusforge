@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useAuth } from "./context/AuthProvider.jsx";
 import StartupPage from "./routes/startup/Startup.jsx";

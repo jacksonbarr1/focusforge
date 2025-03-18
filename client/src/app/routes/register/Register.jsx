@@ -4,6 +4,7 @@ import { Input, Button } from "nes-ui-react"
 import GoogleButton from 'react-google-button'
 import StartupLayout from "../../../components/startuplayout/StartupLayout.jsx"
 import BackButton from '../../../components/backbutton/BackButton.jsx'
+import { useAuth } from '../../context/AuthProvider.jsx'
 import { supabase } from '../../../config/supabaseClient.js'
 import './register.css'
 
@@ -13,12 +14,17 @@ import './register.css'
 // TODO: Fix back button triggering on ENTER
 
 const RegisterPage = () => {
+    const { user } = useAuth();
     const navigate = useNavigate()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [passwordConfirm, setPasswordConfirm] = useState('')
     const [error, setError] = useState(null)
     const [loading, setLoading] = useState(false)
+
+    if (user) {
+        navigate('/')
+    }
 
     const handleRegister = async (e) => {
         e.preventDefault()
