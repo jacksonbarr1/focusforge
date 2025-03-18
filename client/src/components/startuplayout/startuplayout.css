@@ -12,7 +12,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .startup-container.register-page {
+    .startup-container.form {
         padding-top: 2rem;
         gap: 4rem;
     }
