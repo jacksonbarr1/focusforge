@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import "tailwindcss";
+@import "nes-ui-react";
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./assets/smithery.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  width: min(100vw, 450px);
+  height: min(100vh, 90vh);
+  max-height: 900px;
+
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  border: 4px solid white;
+}
+
+.content-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  gap: 1rem;
+}
+
+.content-container > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+@media screen and (max-aspect-ratio: 9/16) {
+  .main-container {
+    width: 100vw;
+    height: 100vh;
+    max-height: none;
+  }
+}

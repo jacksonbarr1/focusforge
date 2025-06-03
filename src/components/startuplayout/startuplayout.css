@@ -1,0 +1,28 @@
+.startup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    gap: 8rem;
+    padding: 1rem;
+    padding-top: 12rem;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .startup-container.form {
+        padding-top: 2rem;
+        gap: 4rem;
+    }
+}
+
+.title-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 33%;
+    overflow: hidden;
+}
