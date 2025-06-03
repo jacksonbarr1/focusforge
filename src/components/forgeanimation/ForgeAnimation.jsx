@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "nes-ui-react";
-import "./ForgeAnimation.css";
+import "./forgeanimation.css";
 
 
 const ForgeAnimation = () => {
