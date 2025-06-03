@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Heading } from "nes-ui-react";
-import "./WIP.css";
+import "./wip.css";
 
 const WIP = () => {
     return (
