@@ -1,0 +1,64 @@
+{
+  "hash": "4635c4e5",
+  "configHash": "47054654",
+  "lockfileHash": "4b1205b9",
+  "browserHash": "f613b2e2",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "4c03612c",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "9b6e9b11",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "6429a28d",
+      "needsInterop": false
+    },
+    "@supabase/supabase-js": {
+      "src": "../../node_modules/@supabase/supabase-js/dist/module/index.js",
+      "file": "@supabase_supabase-js.js",
+      "fileHash": "62f1d237",
+      "needsInterop": false
+    },
+    "nes-ui-react": {
+      "src": "../../node_modules/nes-ui-react/dist/index.js",
+      "file": "nes-ui-react.js",
+      "fileHash": "deda6327",
+      "needsInterop": false
+    },
+    "react-google-button": {
+      "src": "../../node_modules/react-google-button/es/index.js",
+      "file": "react-google-button.js",
+      "fileHash": "dfcc8a9e",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-JUWM2LYA": {
+      "file": "chunk-JUWM2LYA.js"
+    },
+    "chunk-W4EHDCLL": {
+      "file": "chunk-W4EHDCLL.js"
+    },
+    "browser-J6IYAAS7": {
+      "file": "browser-J6IYAAS7.js"
+    },
+    "chunk-7W32CK3N": {
+      "file": "chunk-7W32CK3N.js"
+    },
+    "browser-2YNC6QW7": {
+      "file": "browser-2YNC6QW7.js"
+    },
+    "chunk-EWTE5DHJ": {
+      "file": "chunk-EWTE5DHJ.js"
+    }
+  }
+}

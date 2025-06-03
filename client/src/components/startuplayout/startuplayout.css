@@ -26,22 +26,3 @@
     min-height: 33%;
     overflow: hidden;
 }
-
-.content-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.content-container > * {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.footer {
-    flex-shrink: 0;
-    text-align: center;
-}
