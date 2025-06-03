@@ -1,6 +1,6 @@
 import React from "react";
 import HomeLayout from "../../../components/homelayout/HomeLayout.jsx";
-import WIP from "../../../components/WIP/WIP.jsx";
+import WIP from "../../../components/wip/WIP.jsx";
 
 const StorePage = () => {
     return (
