@@ -3,6 +3,7 @@ import { Button } from "nes-ui-react"
 import Navbar from "../../../components/navbar/Navbar.jsx";
 import HomeLayout from "../../../components/homelayout/HomeLayout.jsx";
 import { signOut } from "../../../../utils/auth.js";
+import { createTestEntry } from '../../../../utils/edge_functions/createTestEntry.js';
 import ForgeAnimation from "../../../components/forgeanimation/ForgeAnimation.jsx";
 import TimerSelector from "../../../components/timerselector/TimerSelector.jsx";
 import StatusBar from "../../../components/statusbar/StatusBar.jsx";
@@ -11,7 +12,7 @@ import "./homescreen.css";
 const HomeScreen = () => {
   return (
     <HomeLayout>
-      <button onClick={signOut}>log out</button>
+      <button onClick={createTestEntry}>Test entry</button>
       <ForgeAnimation />
       <TimerSelector />
       <StatusBar />
