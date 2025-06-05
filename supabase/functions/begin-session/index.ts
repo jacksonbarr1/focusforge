@@ -48,6 +48,29 @@ Deno.serve(async (req) => {
       });
     }
 
+    const { data: activeSessions, error: activeSessionsError } = await supabaseClient
+      .from('session')
+      .select('id')
+      .eq('user_id', user.id)
+      .eq('status', 'active');
+
+    if (activeSessionsError) {
+      console.error('Error checking for active sessions:', activeSessionsError);
+      return new Response(JSON.stringify({ error: "Failed to check for existing sessions."}), {
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+        status: 500,
+      })
+    }
+
+    if (activeSessions && activeSessions.length > 0) {
+      console.warn(`User ${user.id} already has an active session.`);
+      return new Response(JSON.stringify({ error: 'You already have an active session.' }), {
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+        status: 409,
+      });
+    }
+
+
     const startTime = new Date()
     const endTime = new Date(startTime.getTime() + durationMinutes * 60 * 1000)
 
